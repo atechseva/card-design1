@@ -1,0 +1,97 @@
+a {
+    color: #6195FF;
+    text-decoration: none;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+    opacity: 0.8;
+    color: #6195FF;
+}
+.service {
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid #EEE;
+  margin: 10px 0px;
+  box-shadow: 3px 3px 10px grey;
+}
+.service:hover{
+    box-shadow: 3px 3px 1px rgb(255, 190, 13);
+}
+
+.service i {
+  font-size: 36px;
+  color: #6195FF;
+  margin-bottom: 20px;
+}
+
+.service:after {
+  content: "";
+  background-color: #1C1D21;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.2s width;
+  transition: 0.2s width;
+  color: #EEE;
+ 
+}
+
+.service:hover:after {
+  width: 100%;
+  color: #EEE;
+}
+
+.service h3 {
+  -webkit-transition: 0.2s color;
+  transition: all .5s ease-in;
+}
+
+
+.service:hover h3 {
+  color: #fff;
+}
+.service:hover i {
+    color: rgb(255, 190, 13);
+    transition: all .6s ease-in-out;
+  }
+  .service:hover a {
+    color: rgb(255, 190, 13);
+    transition: all .6s ease-in-out;
+  }
+.service:hover p{
+    color: rgb(173, 169, 169);
+  }
+
+
+    #service h3{
+        font-size: 20px;
+    }
+    
+    #service p{
+        font-size: 12px;
+    }
+    #service .fa-angle-double-right{
+        font-size: 10px;
+    }
+  @media only screen and (max-width: 800px)
+  {
+#service h3{
+    font-size: 16px;
+}
+
+#service p{
+    font-size: 12px;
+}
+#service .none{
+    display: none;
+}
+  }
+ 
